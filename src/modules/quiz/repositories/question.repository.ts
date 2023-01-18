@@ -1,4 +1,4 @@
-import { Question } from './question.entity';
+import { Question } from '../entities/question.entity';
 import { Repository } from 'typeorm';
 import { CustomRepository } from 'src/config/typeorm-ex.decorator';
 

@@ -1,10 +1,10 @@
-import { QuizService } from './quiz.service';
-import { QuestionService } from './question.service';
+import { QuizService } from '../services/quiz.service';
+import { QuestionService } from '../services/question.service';
 import { ValidationPipe } from '@nestjs/common/pipes';
 import { UsePipes } from '@nestjs/common/decorators';
 import { Controller, Post, Body, Get } from '@nestjs/common';
-import { CreateQuestionDto } from './dto/create-question.dto';
-import { Question } from './question.entity';
+import { CreateQuestionDto } from '../dto/create-question.dto';
+import { Question } from '../entities/question.entity';
 
 @Controller('question')
 export class QuestionController {

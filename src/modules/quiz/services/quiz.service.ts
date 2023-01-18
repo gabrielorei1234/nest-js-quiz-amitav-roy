@@ -1,8 +1,8 @@
-import { Quiz } from 'src/modules/quiz/quiz.entity';
+import { Quiz } from 'src/modules/quiz/entities/quiz.entity';
 import { Injectable, Get } from '@nestjs/common'
 import { InjectRepository } from '@nestjs/typeorm';
-import { CreateQuizDto } from './dto/CreateQuiz.dto';
-import { QuizRepository } from './quiz.repository';
+import { CreateQuizDto } from '../dto/CreateQuiz.dto';
+import { QuizRepository } from '../repositories/quiz.repository';
 
 @Injectable()
 

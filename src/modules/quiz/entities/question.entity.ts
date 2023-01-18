@@ -1,4 +1,4 @@
-import { Quiz } from 'src/modules/quiz/quiz.entity';
+import { Quiz } from 'src/modules/quiz/entities/quiz.entity';
 import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, ManyToOne } from 'typeorm';
 
 @Entity('questions')
