@@ -1,4 +1,5 @@
-import { BaseEntity, Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { Quiz } from 'src/modules/quiz/quiz.entity';
+import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, ManyToOne } from 'typeorm';
 
 @Entity('questions')
 export class Question extends BaseEntity {
@@ -10,4 +11,7 @@ export class Question extends BaseEntity {
     })
 
     question: string;
+
+    @ManyToOne(()=> Quiz, (quiz) => quiz.questions)
+    quiz: Quiz
 }
